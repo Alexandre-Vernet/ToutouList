@@ -7,7 +7,7 @@
 }
 body 
 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
 }
 .container 
 {
@@ -29,7 +29,6 @@ body
     padding: 1.3em;
     /* background: red; */
 }
-
 .container .list h1 
 {
     font-size: 3em;
@@ -38,9 +37,32 @@ body
     font-weight: 700;
     padding: 1.2em 2.4em;
     text-align: center;
-    margin-bottom: 50px;
 }
 
+
+/* Add Task */
+.container .list .addTask 
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.container .list .addTask input[type="text"] 
+{
+    font-size: 1.4em;
+    color: #03a9f4;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #03a9f4;
+    text-align: center;
+}
+.container .list .addTask input[type="text"]::placeholder 
+{
+    color: #03a9f4;
+}
+
+
+
+/* Display list of task */
 .container .list .task 
 {
     width: 100%;
@@ -48,6 +70,7 @@ body
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 15px;
 }
 
 .container .list .task p
@@ -58,3 +81,4 @@ body
 {
     transform: scale(1.5);
 }
+
