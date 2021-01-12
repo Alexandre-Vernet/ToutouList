@@ -73,12 +73,17 @@ body
     margin-bottom: 15px;
 }
 
-.container .list .task p
+.container .list .task label
 {
     font-size: 1.4em;
 }
 .container .list .task input
 {
     transform: scale(1.5);
+}
+
+.container .list .task input:hover
+{
+    cursor: pointer;
 }
 
